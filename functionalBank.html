@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functional Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="text-center my-10">
+        <h1 class="text-4xl font-medium">Welcome To <span class="text-rose-600">Functional Bank!</span></h1>
+    </header>
+    <section>
+        <div class="w-3/4 mx-auto font-medium text-white text-2xl grid grid-cols-3 gap-4">
+            <div class="bg-amber-600 p-10 rounded-lg">
+                <h1 class="mb-2">Deposite</h1>
+                <h1>$<span id="previous-deposite">00</span></h1>
+            </div>
+            <div class="bg-lime-600 p-10 rounded-lg">
+                <h1 class="mb-2">Withdraw</h1>
+                <h1>$<span id="previous-withdraw">00</span></h1>
+            </div>
+            <div class="bg-green-800 p-10 rounded-lg">
+                <h1 class="mb-2">Total Balance</h1>
+                <h1>$<span id="total-balance">1240</span></h1>
+            </div>
+        </div>
+        <!-- deposite and withdraw section -->
+        <div class="w-3/4 mx-auto font-medium text-white text-2xl grid grid-cols-2 gap-4 mt-5">
+           <div class="bg-indigo-700 p-10 rounded-lg">
+            <h1 class="mb-2">Deposite Amount</h1>
+            <input id="input-field" class="rounded-lg py-1 px-2 w-3/4 text-black text-base" type="text" placeholder="$ your withdraw amount">
+            <button id="deposite-btn" class="bg-pink-700 py-1 px-3 rounded-lg mt-2">Deposite</button>
+           </div>
+           <div class="bg-lime-700 p-10 rounded-lg">
+            <h1 class="mb-2">Withdraw Amount</h1>
+            <input id="withdraw-field" class="rounded-lg py-1 px-2 w-3/4 text-black text-base" type="text" placeholder="$ your withdraw amount">
+            <button id="withdraw-btn" class="bg-pink-700 py-1 px-3 rounded-lg mt-2">Withdraw</button>
+           </div>
+        </div>
+    </section>
+    <div class="text-center font-medium mt-5">
+        <button id="logout-btn" class="bg-red-600 px-4 py-2 text-white rounded-lg">Log Out</button>
+    </div>
+
+    <script src="./functional-Js/utilities.js"></script>
+    <!-- <script src="./functional-Js/deposite.js"></script> -->
+    <!-- <script src="./functional-Js/withdraw.js"></script> -->
+    <script src="./functional-Js/depositeFunc.js"></script>
+    <script src="./functional-Js/withdrawFunc.js"></script>
+    <script src="./functional-Js/logout.js"></script>
+</body>
+</html>
